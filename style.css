@@ -92,12 +92,13 @@ button {
 .header {
   padding: 0 0.625rem;
   margin-bottom: 1.875rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 .description {
   font-style: italic;
   font-weight: 200;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 }
 
 .clue {
@@ -161,6 +162,7 @@ form {
   width: 100%;
   padding: 0.75rem;
   resize: vertical;
+  border-radius: 0.25rem;
 }
 
 .submit-button {
@@ -169,6 +171,7 @@ form {
   padding: 0.75rem;
   background: var(--color-burntorange);
   color: inherit;
-  border-radius: 2px;
+  border-radius: 0.25rem;
   cursor: pointer;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 }
