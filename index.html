@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>CodePen - Survey Form by robertparkala</title>
-  
+  <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
 <div class="container">
   <header class="header">
-    <h1 id="title class"="text-center">Software Developer Roadmap Survey Form </h1>
-    <p id="description" class="description-text center">Please help new developers find their way by completing this short survey.
+    <h1 id="title" class="text-center">Software Developer Roadmap Survey Form</h1>
+    <p id="description" class="description text-center">Please help new developers find their way by completing this short survey.
     </p>
     </header>
   <form id="survey-form">
@@ -26,7 +26,6 @@
          required
          />
     </div>
-    <form id="survey-form">
     <div class="form-group">
       <label id="email-label" for="email">Email</label>
         <input
@@ -38,7 +37,177 @@
          required
          />
     </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class"clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+      </div>
+      <div class="form-group">
+      <p>What should new developers first learn when starting out?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="Javascript">JavaScript</option>
+        <option value="Python">Python</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+      
+      <div class="form-group">
+      <p>Would you recommend Software Development to a friend?</p>
+      <label>
+        <input
+         name="user-recommend"
+         value="a 100%"
+         type="radio"
+         class="input-radio"
+         checked
+        />a 100%</label>
+       
+        <label>
+         <input
+         name="user-recommend"
+         value="Maybe"
+         type="radio"
+         class="input-radio"
+       />Maybe</label>
+       
+        <label>
+         <input
+         name="user-recommend"
+         value="Not sure"
+         type="radio"
+         class="input-radio"
+         />Not sure</label>
+       </div>
+      
+    <div class="form-group">
+        <p>
+          What is the best online resource to learn Software Development?
+        </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option  disabled selected value>Select an option</option>
+        <option value="freeCodeCamp">freeCodeCamp</option>
+        <option value="Udacity">Udacity</option>
+        <option value="CodeAcademy">CodeAcademy</option>
+        <option value="Pluralsight">Pluralsight</option>
+        <option value="Treehouse">Treehouse</option>
+      </select>
+      </div>
+    
+      <div class="form-group">
+        <p>What steps should software developers take to further improve?
+        <span class="clue">(Check all that apply)</span>
+        </p>
+        
+        <label>
+          <input
+           name="prefer"
+           value="build-projects"
+           type="checkbox"
+           class="input-checkbox"
+          />Build projects</label>
+        
+        <label>
+          <input
+           name="prefer"
+           value="commit-to-github"
+           type="checkbox"
+           class="input-checkbox"
+          />Commit to GitHub</label>
+        
+        <label>
+          <input
+           name="prefer"
+           value="build a Roadmap"
+           type="checkbox"
+           class="input-checkbox"
+          />Build a roadmap</label>
+        
+        <label>
+          <input
+           name="prefer"
+           value="collaborate-with-other-Developers"
+           type="checkbox"
+           class="input-checkbox"
+          />Collaborate with other Developers</label>
+        
+        <label>
+          <input
+           name="prefer"
+           value="avoid-working-remotely"
+           type="checkbox"
+           class="input-checkbox"
+          />Avoid working remotely</label>
+        
+        <label>
+          <input
+           name="prefer"
+           value="work-for-a-small-startup"
+           type="checkbox"
+           class="input-checkbox"
+          />Work for a small startup</label>
+      
+        <label>
+          <input
+           name="prefer"
+           value="work-for-a-medium-startup"
+           type="checkbox"
+           class="input-checkbox"
+          />Work for a medium startup</label>
+       
+        <label>
+          <input
+           name="prefer"
+           value="focus-on-writing-code"
+           type="checkbox"
+           class="input-checkbox"
+          />Focus on writing code</label>
+       
+        <label>
+          <input
+           name="prefer"
+           value="networ-with-other-Developers"
+           type="checkbox"
+           class="input-checkbox"
+          />Network with other Developers</label>
+      
+        <label>
+          <input
+           name="prefer"
+           value="be-an-axpert-in-a-programming-language"
+           type="checkbox"
+           class="input-checkbox"
+          />Be an expert in a programming language</label>
+        </div>
+        
+       <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+         ></textarea>
+    </div>
+    
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+    </form>
+  </div>
 <!-- partial -->
-  
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
 </body>
 </html>
